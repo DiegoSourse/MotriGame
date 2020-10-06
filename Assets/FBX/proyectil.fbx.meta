@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 6ae2a169154e2b84a80985475c731d1f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: proyectil.001
+    100004: proyectil.002
+    100006: proyectil.003
+    100008: proyectil.004
+    100010: proyectil.005
+    100012: proyectil.006
+    100014: proyectil.007
+    100016: proyectil.008
+    100018: proyectil.009
+    100020: proyectil.010
+    100022: proyectil.011
+    100024: proyectil.012
+    100026: proyectil.013
+    100028: proyectil.014
+    100030: proyectil.015
+    100032: proyectil.016
+    400000: //RootNode
+    400002: proyectil.001
+    400004: proyectil.002
+    400006: proyectil.003
+    400008: proyectil.004
+    400010: proyectil.005
+    400012: proyectil.006
+    400014: proyectil.007
+    400016: proyectil.008
+    400018: proyectil.009
+    400020: proyectil.010
+    400022: proyectil.011
+    400024: proyectil.012
+    400026: proyectil.013
+    400028: proyectil.014
+    400030: proyectil.015
+    400032: proyectil.016
+    2100000: cartel
+    2100002: tronco2
+    2100004: tronco1
+    2100006: tronco
+    2300000: proyectil.001
+    2300002: proyectil.002
+    2300004: proyectil.003
+    2300006: proyectil.004
+    2300008: proyectil.005
+    2300010: proyectil.006
+    2300012: proyectil.007
+    2300014: proyectil.008
+    2300016: proyectil.009
+    2300018: proyectil.010
+    2300020: proyectil.011
+    2300022: proyectil.012
+    2300024: proyectil.013
+    2300026: proyectil.014
+    2300028: proyectil.015
+    2300030: proyectil.016
+    3300000: proyectil.001
+    3300002: proyectil.002
+    3300004: proyectil.003
+    3300006: proyectil.004
+    3300008: proyectil.005
+    3300010: proyectil.006
+    3300012: proyectil.007
+    3300014: proyectil.008
+    3300016: proyectil.009
+    3300018: proyectil.010
+    3300020: proyectil.011
+    3300022: proyectil.012
+    3300024: proyectil.013
+    3300026: proyectil.014
+    3300028: proyectil.015
+    3300030: proyectil.016
+    4300000: proyectil.001
+    4300002: proyectil.002
+    4300004: proyectil.003
+    4300006: proyectil.004
+    4300008: proyectil.005
+    4300010: proyectil.006
+    4300012: proyectil.007
+    4300014: proyectil.008
+    4300016: proyectil.009
+    4300018: proyectil.010
+    4300020: proyectil.011
+    4300022: proyectil.012
+    4300024: proyectil.013
+    4300026: proyectil.014
+    4300028: proyectil.015
+    4300030: proyectil.016
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: d0b08489ce915734983f8dc2feb995de
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone.004
+    100004: Bone.005
+    100006: Bone.005_end
+    100008: Bone.006
+    100010: Bone.007
+    100012: Bone.007_end
+    100014: Bone.008
+    100016: Bone.009
+    100018: Bone.010
+    100020: Bone.011
+    100022: Bone.011_end
+    100024: Bone.012
+    100026: Bone.013
+    100028: Bone.014
+    100030: Bone.015
+    100032: Bone.015_end
+    100034: Bone.016
+    100036: Bone.017
+    100038: Bone.017_end
+    100040: Brazo_D
+    100042: Brazo_I
+    100044: coco
+    100046: //RootNode
+    100048: Cuello
+    100050: Cuello.001
+    100052: Cuello.002
+    100054: Cuello.003
+    100056: Cuello.003_end
+    100058: Cuello.004
+    100060: Cuello.004_end
+    100062: Cuerpo
+    400000: Armature
+    400002: Bone.004
+    400004: Bone.005
+    400006: Bone.005_end
+    400008: Bone.006
+    400010: Bone.007
+    400012: Bone.007_end
+    400014: Bone.008
+    400016: Bone.009
+    400018: Bone.010
+    400020: Bone.011
+    400022: Bone.011_end
+    400024: Bone.012
+    400026: Bone.013
+    400028: Bone.014
+    400030: Bone.015
+    400032: Bone.015_end
+    400034: Bone.016
+    400036: Bone.017
+    400038: Bone.017_end
+    400040: Brazo_D
+    400042: Brazo_I
+    400044: coco
+    400046: //RootNode
+    400048: Cuello
+    400050: Cuello.001
+    400052: Cuello.002
+    400054: Cuello.003
+    400056: Cuello.003_end
+    400058: Cuello.004
+    400060: Cuello.004_end
+    400062: Cuerpo
+    2100000: Dientes
+    2100002: Cuerpo
+    2100004: Panza
+    2100006: Escamas
+    2100008: Boca
+    2100010: Panza1
+    2100012: Ojos
+    2100014: Iris
+    4300000: coco
+    7400000: Armature|Ataque
+    7400002: Armature|CocoMov
+    7400004: Armature|Descanzo
+    7400006: Armature|Giro
+    9500000: //RootNode
+    13700000: coco
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
