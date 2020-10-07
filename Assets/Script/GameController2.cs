@@ -64,6 +64,7 @@ public class GameController2 : MonoBehaviour
         //if(Input.GetMouseButtonDown)
         //anim.SetBool("choca", op);
         //anim.
+        Debug.Log("Estamos en el nivel " + EstadoJuego.estadoJuego.Getlevel());
         int NroPose = Random.Range(0, 30);
         Debug.Log("POSE: "+NroPose);
         int []pos = obtenerPose(NroPose);

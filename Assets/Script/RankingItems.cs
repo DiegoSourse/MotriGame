@@ -14,22 +14,25 @@ public class RankingItems : MonoBehaviour
         switch (option)
         {
             case 1:
-                //Ranking
+                //Ranking los 10 primero valores posicion, alias, puntaje total, tiempo total, fecha
                 break;
             case 2:
-                //Progreso
+                //Progreso con id y alias de jugador Nivel, puntos por nivel, tiempo por nivel, fecha
                 break;
             case 3:
-                //Logro
+                //Logro con id y alias de jugador, nivel, descripcion y fecha
+                break;
+            case 4:
+                //Usuarios mostrar todos los usuarios por sus alias y su id
                 break;
             default:
                 break;
         }
-        for (int i = 0; i < 10; i++)
+        /*for (int i = 0; i < 10; i++)
         {
             GameObject card = Instantiate(item) as GameObject;
             card.transform.SetParent(container.transform, false);
-        }
+        }*/
     }
     // Update is called once per frame
     void Update()

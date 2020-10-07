@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
     {
         gameTimeText.text = "00:00";
         gameTimer = (InitMin * 60) + InitSec;
+        Debug.Log("Estamos en el nivel "+EstadoJuego.estadoJuego.Getlevel());
     }
 
     // Update is called once per frame

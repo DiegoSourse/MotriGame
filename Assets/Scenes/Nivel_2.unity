@@ -258,6 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 158364405}
   - component: {fileID: 158364406}
+  - component: {fileID: 158364407}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -299,6 +300,18 @@ MonoBehaviour:
   salto: 0
   anim: {fileID: 133644719}
   rb: {fileID: 133644721}
+--- !u!114 &158364407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158364404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cacbd70f62579548a9ac988e7c985ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &193129736
 PrefabInstance:
   m_ObjectHideFlags: 0

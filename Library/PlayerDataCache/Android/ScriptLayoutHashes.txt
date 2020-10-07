@@ -2,12 +2,18 @@ Android
 PlayerPath?
 C:/Users/DIEZIO/Desktop/motri.apk
 SceneListBegin?
-Assets/Scenes/Nivel_0.unity
+Assets/Scenes/Nivel_00.unity
+Assets/Scenes/Nivel_01.unity
+Assets/Scenes/Nivel_1.unity
+Assets/Scenes/Nivel_2.unity
+Assets/Scenes/Nivel_3.unity
+Assets/Scenes/Nivel_4.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 23efcd1831b04ace52b7b3485f150f24 Assembly-CSharp.dll:.GvrDropdown
 8f9981ae062e1a02c7f0bcdf63e95233 Assembly-CSharp.dll:GoogleVR.HelloVR.HeadsetDemoManager
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.VRActivatedYes
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -94,6 +100,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 5d46189bfca968b9b26fd60c37765c3f Assembly-CSharp.dll:.GvrArmModel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DestroyByBoundary
+7e6f3cec810b51366c6e857ffaf3cdbc Assembly-CSharp.dll:.UIManager
 ff7d3100dcac4699fa2b5abb996d38b1 Assembly-CSharp.dll:GoogleVR.Demos.DemoInputManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GvrEditorEmulator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -211,6 +218,7 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.CargarData
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 bf3913f0d6c694bf20e1d681c79a4993 Assembly-CSharp.dll:GoogleVR.Beta.Demos.DemoObjectController6DoF
 bfb27555fe9d8f8f2507fc6a7abd6ce0 Assembly-CSharp.dll:.GvrAllEventsTrigger
@@ -220,9 +228,11 @@ e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexJitter
 10e5e5a6a80d1d5521d8e42ecdcff303 Assembly-CSharp.dll:GoogleVR.Beta.Demos.DemoSeeThroughController
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 f694021fab526c14fbd3efebc16d5eba Assembly-CSharp.dll:.GvrTrackedController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.NotificationCenter
 1f8286dbbba9b39b9120dec32b8944e4 Assembly-CSharp.dll:.GvrLaserPointer
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 3cae62e09a50c5d5aae8d0536b3d8fde Assembly-CSharp.dll:.ChatController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.VRActivatedNO
 e244702e0dc05782229aa524e4d757f5 Assembly-CSharp.dll:TMPro.Examples.TMP_ExampleScript_01
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -282,9 +292,11 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 77035de2f75c9d7a19377ef6002c9bd8 Assembly-CSharp.dll:.GvrReticlePointer
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 27e5341178f188b89bdc6495710b590c Assembly-CSharp.dll:TMPro.Examples.Benchmark01_UGUI
+57f3bac4268da95e8a0c337d1732ce86 Assembly-CSharp.dll:.RankingItems
 8a874a8207a7664bdf44e61f28717254 Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 fe2d355deb0ca31d59a0a7cf4d141fc3 Assembly-CSharp.dll:TMPro.Examples.Benchmark04
+18c152473ea259b38afa9f6b7c7a6966 Assembly-CSharp.dll:.ButtonSoundClick
 89c433fef753b02de32958d7fe54cc06 Assembly-CSharp.dll:.GvrLaserVisual
 4d16cfbaa8e821a2b370e80844a0e9bc Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
 3521ce3e471952c1bdd4cc618dceb5ae Assembly-CSharp.dll:.GvrControllerVisual
@@ -388,3 +400,4 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+ff649668458a2830cbfa3d1e6e5e5599 Assembly-CSharp.dll:.SelectLevel

@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ApplicationManager.cs" />
+    <Compile Include="Assets\CargarData.cs" />
     <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs" />
@@ -198,7 +199,9 @@
     <Compile Include="Assets\Script\NotificationCenter.cs" />
     <Compile Include="Assets\Script\PlayAnimAbeja.cs" />
     <Compile Include="Assets\Script\RankingItems.cs" />
+    <Compile Include="Assets\Script\SelectLevel.cs" />
     <Compile Include="Assets\Script\SpawnTronco.cs" />
+    <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\VRActivatedNO.cs" />
     <Compile Include="Assets\Script\VRActivatedYes.cs" />
     <Compile Include="Assets\Script\zombie.cs" />
