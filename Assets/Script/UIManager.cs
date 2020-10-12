@@ -4,7 +4,8 @@ using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-
+using System;
+using System.Globalization;
 public class UIManager : MonoBehaviour
 {
 
@@ -101,14 +102,76 @@ public class UIManager : MonoBehaviour
     {
         Application.OpenURL("https://diegoquispecondori.blogspot.com/");
     }
-    public void ObtenerDatosForm()
+    public void ObtenerDatosForm(GameObject form)
     {
-        GameObject inputFieldGo = GameObject.Find("alias");
-        TMPro.TMP_InputField newAlias = inputFieldGo.GetComponent<TMPro.TMP_InputField>();
-        //Debug.Log(inputFieldCo.text);
-        //guardamos en la base de datos
-        EstadoJuego.estadoJuego.SetAlias(newAlias.text);
-        //Debug.Log(EstadoJuego.estadoJuego.GetAlias());
-        SceneManager.LoadScene("Nivel_01");
+        if (VerificaForm(form))
+        {
+            GameObject nombre = GameObject.Find("nombre");
+            GameObject alias = GameObject.Find("alias");
+            GameObject edad = GameObject.Find("edad");
+            GameObject estatura = GameObject.Find("estatura");
+            GameObject masc = GameObject.Find("masc");
+            GameObject fem = GameObject.Find("fem");
+            string newNombre = nombre.GetComponent<TMPro.TMP_InputField>().text;
+            string newAlias = alias.GetComponent<TMPro.TMP_InputField>().text;
+            string newEdad = edad.GetComponent<TMPro.TMP_InputField>().text;
+            string newEstatura = estatura.GetComponent<TMPro.TMP_InputField>().text;
+            Toggle newMasc = masc.GetComponent<Toggle>();
+            Toggle newFem = fem.GetComponent<Toggle>();
+            //
+            string sexo = newMasc.isOn ? "M" : "F";
+            string aliasDef = newAlias.ToUpper();
+            //conectamos a la base de datos
+            SQLiteAndroid sql = new SQLiteAndroid();
+            sql.Conectar();
+            //verificamos si el alias es unico, caso contrario añadimos un numero adicinal
+            int dato = sql.Select_Scalar_Int("SELECT count(Alias) from Jugador where Alias like '" + aliasDef + "%';");
+            aliasDef = aliasDef + (dato != 0 ? "" + dato : "");
+            //ingresamos los datos obtenidos a la base de datos
+            string query = "INSERT INTO Jugador (Alias,Nombre,Edad,Estatura,Sexo) VALUES('" + aliasDef + "','" + newNombre + "'," + newEdad + "," + newEstatura + ",'" + sexo + "')";
+            sql.insert_function(query);
+            //Debug.Log(query);
+            int Id_UsuarioNuevo = sql.Select_Scalar_Int("Select Id_jugador from jugador where alias='" + aliasDef + "' limit 1;");
+            sql.Cerrar();
+            //Establecemos como id y alias general para las proximas escenas
+            EstadoJuego.estadoJuego.SetAlias(aliasDef);
+            EstadoJuego.estadoJuego.SetId(Id_UsuarioNuevo);
+            EstadoJuego.estadoJuego.Nombre = newNombre;
+            EstadoJuego.estadoJuego.Estatura = Convert.ToSingle(newEstatura, CultureInfo.CreateSpecificCulture("en-US"));
+            EstadoJuego.estadoJuego.Edad = Convert.ToInt32(newEdad);
+            //Debug.Log(EstadoJuego.estadoJuego.GetAlias());
+            //Cargamos a la siguiente escena
+            SceneManager.LoadScene("Nivel_01");
+        }
+        else
+        {
+
+        }
+        
+    }
+    public void Abre_user(Button click)
+    {
+        string alias = click.GetComponent<TMPro.TextMeshProUGUI>().text;
+        Debug.Log("Del boton clickeado "+alias);
+    }
+
+    public bool VerificaForm(GameObject form)
+    {
+        Color newcolor = new Color(0.898f, 0.341f,  0.341f, 1f);
+        bool llenado = true;
+        TMPro.TMP_InputField[] lista = form.GetComponentsInChildren<TMPro.TMP_InputField>();
+        foreach (var item in lista)
+        {
+            if (item.text == "")
+            {
+                Debug.Log("Error, campos vacios en el formulario " + item.name);
+                //item.
+                item.image.color = newcolor;
+                llenado = false;
+                //return false;
+                //break;
+            }
+        }
+        return llenado;
     }
 }

@@ -29,6 +29,12 @@ public class PlayAnimAbeja : MonoBehaviour
         MoverAbeja.transform.localPosition = startingPosition;
         //MoverAbeja.transform.localRotation = angulos;
     }*/
+    public void OnPointerClick()
+    {
+        Debug.Log("Abeja Marcada");
+        NotificationCenter.DefaultCenter.PostNotification(this, "AbejaColision");
+        //cambiar de posicion de inmediato
+    }
     public void animTranquilo()
     {
         anim.Play("Armature|Vuelo_Tranquilo");

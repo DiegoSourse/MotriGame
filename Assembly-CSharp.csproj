@@ -188,19 +188,24 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\Script\ButtonClickRedirect.cs" />
     <Compile Include="Assets\Script\ButtonSoundClick.cs" />
+    <Compile Include="Assets\Script\DeleteItemOnDisable.cs" />
     <Compile Include="Assets\Script\DestroyByBoundary.cs" />
     <Compile Include="Assets\Script\EstadoJuego.cs" />
     <Compile Include="Assets\Script\Fisica.cs" />
     <Compile Include="Assets\Script\ForceModeExample.cs" />
+    <Compile Include="Assets\Script\FormFunctions.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
     <Compile Include="Assets\Script\GameController2.cs" />
     <Compile Include="Assets\Script\GazeInteraction.cs" />
+    <Compile Include="Assets\Script\LevelButtonAnalizer.cs" />
     <Compile Include="Assets\Script\NotificationCenter.cs" />
     <Compile Include="Assets\Script\PlayAnimAbeja.cs" />
     <Compile Include="Assets\Script\RankingItems.cs" />
     <Compile Include="Assets\Script\SelectLevel.cs" />
     <Compile Include="Assets\Script\SpawnTronco.cs" />
+    <Compile Include="Assets\Script\SQLiteAndroid.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\VRActivatedNO.cs" />
     <Compile Include="Assets\Script\VRActivatedYes.cs" />
@@ -498,6 +503,12 @@
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
       <HintPath>F:/Desarrollo/Tesis/MotriGame/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data">
+      <HintPath>F:/Desarrollo/Tesis/MotriGame/Assets/Plugins/Mono.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>F:/Desarrollo/Tesis/MotriGame/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>F:/Desarrollo/Tesis/MotriGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>

@@ -37,8 +37,8 @@ public class SelectLevel : MonoBehaviour
         tituloNivel.text = titulo;
         nombreNivel.text = subtitulo;
         //level = nivel;
-        EstadoJuego.estadoJuego.Setlevel(nivel);
-        Debug.Log(nivel);
+        EstadoJuego.estadoJuego.LevelSelected = nivel;
+        Debug.Log("Nivel Seleccionado: "+EstadoJuego.estadoJuego.LevelSelected);
     }
     private void Start()
     {

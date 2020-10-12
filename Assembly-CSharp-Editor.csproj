@@ -342,6 +342,12 @@
     <Reference Include="Google.ProtocolBuffers">
       <HintPath>F:/Desarrollo/Tesis/MotriGame/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Data">
+      <HintPath>F:/Desarrollo/Tesis/MotriGame/Assets/Plugins/Mono.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>F:/Desarrollo/Tesis/MotriGame/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>F:/Desarrollo/Tesis/MotriGame/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
