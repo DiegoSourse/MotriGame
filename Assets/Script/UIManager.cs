@@ -142,6 +142,7 @@ public class UIManager : MonoBehaviour
             //Debug.Log(EstadoJuego.estadoJuego.GetAlias());
             //Cargamos a la siguiente escena
             SceneManager.LoadScene("Nivel_01");
+            //una corutina para la barra de progreso
         }
         else
         {

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class zombie : MonoBehaviour
 {
-    public Animation anim;
-
+    //public Animation anim;
+    public Animator animCon;
     public float initialtimer = 2f;
+    private float decrement = 0;
 
     public float movementSpeed = 1f;
     public float rotationSpeed = 5f;
     public GameObject player;
-
+    
     Vector3 targetPosition;
     Vector3 towardsTarget;
 
@@ -30,10 +31,16 @@ public class zombie : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int level = EstadoJuego.estadoJuego.Getlevel();
+        decrement = (initialtimer - 2f)/EstadoJuego.estadoJuego.MaxScorePerLevel[level];
         RecalculateTargetPosition();
-        StartCoroutine(volar());
+        StartCoroutine(Volar());
     }
-
+    public void Colision()
+    {
+        Debug.Log("Marcado");
+        initialtimer = initialtimer - decrement;
+    }
     // Update is called once per frame
     /*void Update()
     {
@@ -49,18 +56,26 @@ public class zombie : MonoBehaviour
         transform.position += transform.forward * movementSpeed * Time.deltaTime;
         Debug.DrawLine(transform.position, targetPosition, Color.red);
     }*/
-    IEnumerator volar()
+    IEnumerator Volar()
     {
         while(true)
         {
+            NotificationCenter.DefaultCenter.AddObserver(this, "Colision");
             towardsTarget = targetPosition - transform.position;
             if (towardsTarget.magnitude < 0.25f)
             {
-               // Debug.Log("llego------");
-                anim.Play("Armature|Vuelo_Tranquilo");
-                yield return new WaitForSeconds(initialtimer);
+                // Debug.Log("llego------");
+                //anim.Play("Armature|Vuelo_Tranquilo");
+                
+                animCon.SetBool("Movimiento", false);
+                animCon.SetBool("Tiempo", true);
+                animCon.SetBool("Marcado", false);
+                //Espera hasta cambiar de posicion
+                yield return new WaitForSeconds(initialtimer);                
+                animCon.SetBool("Movimiento", true);
+                animCon.SetBool("Tiempo", false);
                 //anim.Stop("Armature|Vuelo_Tranquilo");
-                anim.Play("Armature|Vuelo_Escape");
+                //anim.Play("Armature|Vuelo_Escape");
                 RecalculateTargetPosition();
             }
             Quaternion towardsTragetRotation = Quaternion.LookRotation(towardsTarget, Vector3.up);

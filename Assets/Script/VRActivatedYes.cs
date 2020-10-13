@@ -14,6 +14,6 @@ public class VRActivatedYes : MonoBehaviour
         XRSettings.LoadDeviceByName(VRDevice);
         yield return null;
         XRSettings.enabled = true;
-        Debug.Log("DESDE EL YES " + XRSettings.loadedDeviceName.ToString());
+        //Debug.Log("DESDE EL YES " + XRSettings.loadedDeviceName.ToString());
     }
 }

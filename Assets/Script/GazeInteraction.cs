@@ -89,7 +89,8 @@ public class GazeInteraction : MonoBehaviour, IPointerClickHandler
     {
         gazedAt = false;
         aux = false;
-        radio.GetComponent<Image>().fillAmount = 0f;
+        if(radio != null)
+            radio.GetComponent<Image>().fillAmount = 0f;
         Debug.Log("PointerExit");
     }
 
@@ -97,4 +98,5 @@ public class GazeInteraction : MonoBehaviour, IPointerClickHandler
     {
         Debug.Log("PointerDown");
     }
+
 }

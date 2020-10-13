@@ -26,6 +26,7 @@ public class EstadoJuego : MonoBehaviour
         public int[] ScoreLevel;
     //private string fecha;
     #endregion
+    public int[] MaxScorePerLevel = { 100, 25, 25, 25, 25 };
     //private string totalTime;
     private int totalScore = 0;
     //

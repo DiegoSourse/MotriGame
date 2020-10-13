@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     //
     private int marcadas = 0;
     private int nivelActual;
+    private int MaxScore;
     //
     public int InitMin = 0;
     public int InitSec = 15;
@@ -41,6 +42,7 @@ public class GameController : MonoBehaviour
         score.text = marcadas.ToString();
         gameTimer = (InitMin * 60) + InitSec;
         nivelActual = EstadoJuego.estadoJuego.Getlevel();
+        MaxScore = EstadoJuego.estadoJuego.MaxScorePerLevel[nivelActual];
         Debug.Log("Estamos en el nivel "+nivelActual);
         alerta.SetActive(false);
         Abeja.SetActive(false);
@@ -51,7 +53,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (StartGame)
+        if (StartGame) //El juego inicia?
         {
             int seconds = (int)(gameTimer % 60);
             int minutes = (int)(gameTimer / 60) % 60;
@@ -62,21 +64,29 @@ public class GameController : MonoBehaviour
             score.text = marcadas.ToString();
             //Debug.Log("Time:" + Time.deltaTime);
             //
-            if (gameTimer>0)
+            if (gameTimer>0) //El tiempo de NO juego terminó?
             {
                 gameTimer -= Time.deltaTime;
-            }        
+                if (marcadas == MaxScore)
+                {
+                    MostrarAlerta("Nivel Completado...");
+                    StartGame = false;
+                    source.PlayOneShot(clip);
+                }
+            }
+            else
+            {
+                EstadoJuego.estadoJuego.ScoreLevel[nivelActual] = marcadas;
+                EstadoJuego.estadoJuego.Time = "00:" + gameTimeText.text;
+                MostrarAlerta("Tiempo Finalizado...");
+                StartGame = false;
+            }
+            //Faltan 10 segundo para el final?
             if (seconds <= 10 && minutes==0)
                 gameTimeText.color = Color.red;
             //condicion para que se incremente el valor de score
             NotificationCenter.DefaultCenter.AddObserver(this, "AbejaColision");
-            //condicion para que se termine el juego
-            if(marcadas == 2)
-            {
-                MostrarAlerta("Nivel Completado...");
-                StartGame = false;
-                source.PlayOneShot(clip);
-            }
+            //condicion para que se termine el juego            
             //guardar datos
             //mostrar datos
         }        
@@ -85,7 +95,7 @@ public class GameController : MonoBehaviour
     {
         marcadas++;
         EstadoJuego.estadoJuego.ScoreLevel[nivelActual] = marcadas;
-        EstadoJuego.estadoJuego.Time = gameTimeText.text;
+        EstadoJuego.estadoJuego.Time = "00:"+gameTimeText.text;
     }
     public void IniciaJuego(bool val)
     {
@@ -112,6 +122,7 @@ public class GameController : MonoBehaviour
         enunciado.text = TextEnunciado;
         textScore.text = EstadoJuego.estadoJuego.ScoreLevel[nivelActual].ToString();
         textTiempo.text = EstadoJuego.estadoJuego.Time;
-        //
+        //Guardamos info de la partida
+        //EstadoJuego.estadoJuego.GuardarData();
     }
 }
