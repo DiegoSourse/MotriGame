@@ -134,8 +134,8 @@ public class UIManager : MonoBehaviour
             int Id_UsuarioNuevo = sql.Select_Scalar_Int("Select Id_jugador from jugador where alias='" + aliasDef + "' limit 1;");
             sql.Cerrar();
             //Establecemos como id y alias general para las proximas escenas
-            EstadoJuego.estadoJuego.SetAlias(aliasDef);
-            EstadoJuego.estadoJuego.SetId(Id_UsuarioNuevo);
+            EstadoJuego.estadoJuego.AliasPlayer = aliasDef;
+            EstadoJuego.estadoJuego.IdPlayer = Id_UsuarioNuevo;
             EstadoJuego.estadoJuego.Nombre = newNombre;
             EstadoJuego.estadoJuego.Estatura = Convert.ToSingle(newEstatura, CultureInfo.CreateSpecificCulture("en-US"));
             EstadoJuego.estadoJuego.Edad = Convert.ToInt32(newEdad);

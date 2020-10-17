@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fisica : MonoBehaviour
 {
+    //
     public float thrust=1;
     public Rigidbody rb;
     void Start()
@@ -24,5 +25,9 @@ public class Fisica : MonoBehaviour
         //rb.AddForce(Vector3.back*thrust, ForceMode.VelocityChange);
         thrust = vel;
         rb.velocity = Vector3.back * thrust;
+    }
+    public void Desplazar(float vel)
+    {
+        transform.Translate(Vector3.back * vel * Time.deltaTime);
     }
 }

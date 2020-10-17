@@ -10,7 +10,7 @@ public class DestroyByBoundary : MonoBehaviour
     {
         //time += Time.deltaTime;
         trigger = true;
-        Debug.Log("Inicio");
+        //Debug.Log("Inicio");
     }
     private void OnTriggerStay(Collider other)
     {
@@ -23,6 +23,9 @@ public class DestroyByBoundary : MonoBehaviour
         {
             Destroy(other.gameObject);
             trigger = false;
+            //Debug.Log("ELIMINADO");
+            //Añadir una Notification
+            NotificationCenter.DefaultCenter.PostNotification(this,"TriggerExit");
         }
     }
     private void Update()
@@ -30,7 +33,7 @@ public class DestroyByBoundary : MonoBehaviour
         if (trigger)
         {
             time += Time.deltaTime;
-            Debug.Log("Final " + time);
+            //Debug.Log("Final " + time);
         }
     }
 }

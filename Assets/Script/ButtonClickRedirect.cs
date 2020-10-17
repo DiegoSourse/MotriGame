@@ -5,10 +5,8 @@ using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Mono.Data.Sqlite;
-using System;
 using System.Data;
 using System.IO;
-using UnityEngine.UI;
 public class ButtonClickRedirect : MonoBehaviour
 {
     //public AudioSource source { get { return GetComponent<AudioSource>(); } }
@@ -41,8 +39,8 @@ public class ButtonClickRedirect : MonoBehaviour
             }
             //Debug.Log(reader.FieldCount);
         }
-        EstadoJuego.estadoJuego.SetAlias(textoBoton);
-        EstadoJuego.estadoJuego.SetId(idBoton);
+        EstadoJuego.estadoJuego.AliasPlayer = textoBoton;
+        EstadoJuego.estadoJuego.IdPlayer = idBoton;
         //redireccionamos a la escena 01
         //con los datos de estado juego
         SceneManager.LoadScene("Nivel_01");

@@ -53,7 +53,7 @@ public class RankingItems : MonoBehaviour
                 break;
             case 2:
                 //Progreso con id y alias de jugador Nivel, puntos por nivel, tiempo por nivel, fecha
-                string condicion = "Id_Jugador="+EstadoJuego.estadoJuego.GetId()+";";
+                string condicion = "Id_Jugador="+EstadoJuego.estadoJuego.IdPlayer+";";
                 using (IDataReader reader = sql.Select_function("Registro", "Nivel,Puntaje,Tiempo,Fecha",condicion))
                 {
                     while (reader.Read())

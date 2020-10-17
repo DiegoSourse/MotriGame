@@ -9,7 +9,8 @@ public class GameController : MonoBehaviour
 {
     public GameObject camara = null;
     public AudioSource source { get { return GetComponent<AudioSource>(); } }
-    public AudioClip clip;
+    public AudioClip TimeOver;
+    public AudioClip Complete;
     // Start is called before the first frame update
     public TextMeshPro gameTimeText;
     public TextMeshPro score;
@@ -41,7 +42,7 @@ public class GameController : MonoBehaviour
         gameTimeText.text = "00:00";
         score.text = marcadas.ToString();
         gameTimer = (InitMin * 60) + InitSec;
-        nivelActual = EstadoJuego.estadoJuego.Getlevel();
+        nivelActual = EstadoJuego.estadoJuego.Level;
         MaxScore = EstadoJuego.estadoJuego.MaxScorePerLevel[nivelActual];
         Debug.Log("Estamos en el nivel "+nivelActual);
         alerta.SetActive(false);
@@ -71,19 +72,24 @@ public class GameController : MonoBehaviour
                 {
                     MostrarAlerta("Nivel Completado...");
                     StartGame = false;
-                    source.PlayOneShot(clip);
+                    source.PlayOneShot(Complete);
                 }
             }
             else
             {
-                EstadoJuego.estadoJuego.ScoreLevel[nivelActual] = marcadas;
+                EstadoJuego.estadoJuego.Score = marcadas;
                 EstadoJuego.estadoJuego.Time = "00:" + gameTimeText.text;
-                MostrarAlerta("Tiempo Finalizado...");
+                MostrarAlerta("Se acabo el Tiempo...");
+                source.PlayOneShot(TimeOver);
                 StartGame = false;
             }
             //Faltan 10 segundo para el final?
-            if (seconds <= 10 && minutes==0)
+            if (seconds <= 10 && minutes == 0)
+            {
                 gameTimeText.color = Color.red;
+                //Reproducimos sonido de alerta
+                //
+            }
             //condicion para que se incremente el valor de score
             NotificationCenter.DefaultCenter.AddObserver(this, "AbejaColision");
             //condicion para que se termine el juego            
@@ -94,7 +100,7 @@ public class GameController : MonoBehaviour
     public void AbejaColision()
     {
         marcadas++;
-        EstadoJuego.estadoJuego.ScoreLevel[nivelActual] = marcadas;
+        EstadoJuego.estadoJuego.Score = marcadas;
         EstadoJuego.estadoJuego.Time = "00:"+gameTimeText.text;
     }
     public void IniciaJuego(bool val)
@@ -120,9 +126,9 @@ public class GameController : MonoBehaviour
         textTiempo = GameObject.Find("TiempoText").GetComponent<TextMeshProUGUI>();
         //
         enunciado.text = TextEnunciado;
-        textScore.text = EstadoJuego.estadoJuego.ScoreLevel[nivelActual].ToString();
+        textScore.text = EstadoJuego.estadoJuego.Score.ToString();
         textTiempo.text = EstadoJuego.estadoJuego.Time;
         //Guardamos info de la partida
-        //EstadoJuego.estadoJuego.GuardarData();
+        EstadoJuego.estadoJuego.GuardarData();
     }
 }

@@ -31,7 +31,7 @@ public class zombie : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int level = EstadoJuego.estadoJuego.Getlevel();
+        int level = EstadoJuego.estadoJuego.Level;
         decrement = (initialtimer - 2f)/EstadoJuego.estadoJuego.MaxScorePerLevel[level];
         RecalculateTargetPosition();
         StartCoroutine(Volar());

@@ -9,7 +9,6 @@ using TMPro;
 public class GazeInteraction : MonoBehaviour, IPointerClickHandler
 {
     public float gazeTime = 2f;
-    private int score = 0;
     //public Text texto;
     private float timer=0f;
     //public float Radial=0f;
