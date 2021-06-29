@@ -121,6 +121,15 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.unity.xr.googlevr.android": {
+      "version": "2.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.google.resonance.audio": "2.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.4",
       "depth": 0,

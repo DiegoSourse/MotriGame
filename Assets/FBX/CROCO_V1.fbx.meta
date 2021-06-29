@@ -1,90 +1,248 @@
 fileFormatVersion: 2
 guid: d0b08489ce915734983f8dc2feb995de
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Armature
-    100002: Bone.004
-    100004: Bone.005
-    100006: Bone.005_end
-    100008: Bone.006
-    100010: Bone.007
-    100012: Bone.007_end
-    100014: Bone.008
-    100016: Bone.009
-    100018: Bone.010
-    100020: Bone.011
-    100022: Bone.011_end
-    100024: Bone.012
-    100026: Bone.013
-    100028: Bone.014
-    100030: Bone.015
-    100032: Bone.015_end
-    100034: Bone.016
-    100036: Bone.017
-    100038: Bone.017_end
-    100040: Brazo_D
-    100042: Brazo_I
-    100044: coco
-    100046: //RootNode
-    100048: Cuello
-    100050: Cuello.001
-    100052: Cuello.002
-    100054: Cuello.003
-    100056: Cuello.003_end
-    100058: Cuello.004
-    100060: Cuello.004_end
-    100062: Cuerpo
-    400000: Armature
-    400002: Bone.004
-    400004: Bone.005
-    400006: Bone.005_end
-    400008: Bone.006
-    400010: Bone.007
-    400012: Bone.007_end
-    400014: Bone.008
-    400016: Bone.009
-    400018: Bone.010
-    400020: Bone.011
-    400022: Bone.011_end
-    400024: Bone.012
-    400026: Bone.013
-    400028: Bone.014
-    400030: Bone.015
-    400032: Bone.015_end
-    400034: Bone.016
-    400036: Bone.017
-    400038: Bone.017_end
-    400040: Brazo_D
-    400042: Brazo_I
-    400044: coco
-    400046: //RootNode
-    400048: Cuello
-    400050: Cuello.001
-    400052: Cuello.002
-    400054: Cuello.003
-    400056: Cuello.003_end
-    400058: Cuello.004
-    400060: Cuello.004_end
-    400062: Cuerpo
-    2100000: Dientes
-    2100002: Cuerpo
-    2100004: Panza
-    2100006: Escamas
-    2100008: Boca
-    2100010: Panza1
-    2100012: Ojos
-    2100014: Iris
-    4300000: coco
-    7400000: Armature|Ataque
-    7400002: Armature|CocoMov
-    7400004: Armature|Descanzo
-    7400006: Armature|Giro
-    9500000: //RootNode
-    13700000: coco
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Armature
+  - first:
+      1: 100002
+    second: Bone.004
+  - first:
+      1: 100004
+    second: Bone.005
+  - first:
+      1: 100006
+    second: Bone.005_end
+  - first:
+      1: 100008
+    second: Bone.006
+  - first:
+      1: 100010
+    second: Bone.007
+  - first:
+      1: 100012
+    second: Bone.007_end
+  - first:
+      1: 100014
+    second: Bone.008
+  - first:
+      1: 100016
+    second: Bone.009
+  - first:
+      1: 100018
+    second: Bone.010
+  - first:
+      1: 100020
+    second: Bone.011
+  - first:
+      1: 100022
+    second: Bone.011_end
+  - first:
+      1: 100024
+    second: Bone.012
+  - first:
+      1: 100026
+    second: Bone.013
+  - first:
+      1: 100028
+    second: Bone.014
+  - first:
+      1: 100030
+    second: Bone.015
+  - first:
+      1: 100032
+    second: Bone.015_end
+  - first:
+      1: 100034
+    second: Bone.016
+  - first:
+      1: 100036
+    second: Bone.017
+  - first:
+      1: 100038
+    second: Bone.017_end
+  - first:
+      1: 100040
+    second: Brazo_D
+  - first:
+      1: 100042
+    second: Brazo_I
+  - first:
+      1: 100044
+    second: coco
+  - first:
+      1: 100046
+    second: //RootNode
+  - first:
+      1: 100048
+    second: Cuello
+  - first:
+      1: 100050
+    second: Cuello.001
+  - first:
+      1: 100052
+    second: Cuello.002
+  - first:
+      1: 100054
+    second: Cuello.003
+  - first:
+      1: 100056
+    second: Cuello.003_end
+  - first:
+      1: 100058
+    second: Cuello.004
+  - first:
+      1: 100060
+    second: Cuello.004_end
+  - first:
+      1: 100062
+    second: Cuerpo
+  - first:
+      4: 400000
+    second: Armature
+  - first:
+      4: 400002
+    second: Bone.004
+  - first:
+      4: 400004
+    second: Bone.005
+  - first:
+      4: 400006
+    second: Bone.005_end
+  - first:
+      4: 400008
+    second: Bone.006
+  - first:
+      4: 400010
+    second: Bone.007
+  - first:
+      4: 400012
+    second: Bone.007_end
+  - first:
+      4: 400014
+    second: Bone.008
+  - first:
+      4: 400016
+    second: Bone.009
+  - first:
+      4: 400018
+    second: Bone.010
+  - first:
+      4: 400020
+    second: Bone.011
+  - first:
+      4: 400022
+    second: Bone.011_end
+  - first:
+      4: 400024
+    second: Bone.012
+  - first:
+      4: 400026
+    second: Bone.013
+  - first:
+      4: 400028
+    second: Bone.014
+  - first:
+      4: 400030
+    second: Bone.015
+  - first:
+      4: 400032
+    second: Bone.015_end
+  - first:
+      4: 400034
+    second: Bone.016
+  - first:
+      4: 400036
+    second: Bone.017
+  - first:
+      4: 400038
+    second: Bone.017_end
+  - first:
+      4: 400040
+    second: Brazo_D
+  - first:
+      4: 400042
+    second: Brazo_I
+  - first:
+      4: 400044
+    second: coco
+  - first:
+      4: 400046
+    second: //RootNode
+  - first:
+      4: 400048
+    second: Cuello
+  - first:
+      4: 400050
+    second: Cuello.001
+  - first:
+      4: 400052
+    second: Cuello.002
+  - first:
+      4: 400054
+    second: Cuello.003
+  - first:
+      4: 400056
+    second: Cuello.003_end
+  - first:
+      4: 400058
+    second: Cuello.004
+  - first:
+      4: 400060
+    second: Cuello.004_end
+  - first:
+      4: 400062
+    second: Cuerpo
+  - first:
+      21: 2100000
+    second: Dientes
+  - first:
+      21: 2100002
+    second: Cuerpo
+  - first:
+      21: 2100004
+    second: Panza
+  - first:
+      21: 2100006
+    second: Escamas
+  - first:
+      21: 2100008
+    second: Boca
+  - first:
+      21: 2100010
+    second: Panza1
+  - first:
+      21: 2100012
+    second: Ojos
+  - first:
+      21: 2100014
+    second: Iris
+  - first:
+      43: 4300000
+    second: coco
+  - first:
+      74: 7400000
+    second: Armature|Ataque
+  - first:
+      74: 7400002
+    second: Armature|CocoMov
+  - first:
+      74: 7400004
+    second: Armature|Descanzo
+  - first:
+      74: 7400006
+    second: Armature|Giro
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: coco
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -109,7 +267,123 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Ataque
+      takeName: Armature|Ataque
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|CocoMov
+      takeName: Armature|CocoMov
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Descanzo
+      takeName: Armature|Descanzo
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Giro
+      takeName: Armature|Giro
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -117,25 +391,28 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -144,10 +421,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -157,13 +434,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    globalScale: 1
+    rootMotionBoneName: Armature
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

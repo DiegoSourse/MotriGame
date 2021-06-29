@@ -8,32 +8,37 @@ public class DestroyByBoundary : MonoBehaviour
     private bool trigger = false;
     private void OnTriggerEnter(Collider other)
     {
-        //time += Time.deltaTime;
+        /*time += Time.deltaTime;
         trigger = true;
-        //Debug.Log("Inicio");
+        Debug.Log("Inicio");*/
     }
     private void OnTriggerStay(Collider other)
     {
-        //if(other.tag=="proyectil")
-            //time += Time.deltaTime;
+        /*if(other.tag=="proyectil")
+            time += Time.deltaTime;*/
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "proyectil")
         {
             Destroy(other.gameObject);
-            trigger = false;
+            //trigger = false;
             //Debug.Log("ELIMINADO");
             //Añadir una Notification
             NotificationCenter.DefaultCenter.PostNotification(this,"TriggerExit");
         }
+        if(other.tag == "star")
+        {
+            Destroy(other.gameObject);
+            //Debug.Log("Estrella DELETE");
+        }
     }
     private void Update()
     {
-        if (trigger)
+        /*if (trigger)
         {
             time += Time.deltaTime;
-            //Debug.Log("Final " + time);
-        }
+            Debug.Log("Final " + time);
+        }*/
     }
 }

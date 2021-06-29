@@ -19,7 +19,7 @@ public class RankingItems : MonoBehaviour
     }
     private void OnDisable()
     {
-        Debug.Log("I'm disabled "+option);
+        //Debug.Log("I'm disabled "+option);
     }
     private void OnEnable()
     {

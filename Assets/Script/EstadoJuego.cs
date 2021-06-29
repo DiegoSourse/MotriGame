@@ -42,6 +42,9 @@ public class EstadoJuego : MonoBehaviour
     IDbCommand dbcmd;
     //private IDataReader reader;
     #endregion
+        //
+    public bool Mando { get; set; }
+    //
     private void Awake()
     {
         /*Debug.Log("Nivel actual: " + level);
@@ -116,5 +119,14 @@ public class EstadoJuego : MonoBehaviour
     public void VerificaLogro()
     {
 
+    }
+    //COmprobamos si los puntajes son distintos de cero
+    public bool VerifyScoreLevel()
+    {
+        for (int i = 1; i < 5; i++)
+        {
+            if (ScoreLevel[i] == 0) return false;
+        }
+        return true;
     }
 }

@@ -126,7 +126,7 @@ Material:
     - _marchDistance: 0.5
     - _numSteps: 4
     m_Colors:
-    - _Color: {r: 0.89411765, g: 0.67058825, b: 0.21960784, a: 1}
+    - _Color: {r: 0.827451, g: 0.627451, b: 0.12156863, a: 1}
     - _EdgeColor1: {r: 0, g: 4.856572, b: 28.186356, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

@@ -31,10 +31,14 @@ public class GameController : MonoBehaviour
     TextMeshProUGUI enunciado;
     TextMeshProUGUI textScore;
     TextMeshProUGUI textTiempo;
+    private float porcentaje;
     private void Awake()
     {
         float estatura = EstadoJuego.estadoJuego.Estatura;
-        camara.transform.position = new Vector3(0f, estatura == 0f?1.6f:estatura, 0f);
+        //float estatura = 1.1f;
+        porcentaje = (estatura == 0 ? 1.8f : estatura * 1) / 1.8f;
+        camara.transform.position = new Vector3(0f, (estatura == 0f ? 1.7f : estatura) - 0.1f, 0f);
+        Abeja.transform.localScale = Abeja.transform.localScale * porcentaje;
     }
     void Start()
     {
@@ -54,6 +58,15 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //COdigo para volver atras opcional
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("Nivel_01");
+            }
+        }
+        //
         if (StartGame) //El juego inicia?
         {
             int seconds = (int)(gameTimer % 60);
@@ -111,7 +124,11 @@ public class GameController : MonoBehaviour
     }
     public void SalirNivel()
     {
-        SceneManager.LoadScene("Nivel_01");
+        if(EstadoJuego.estadoJuego.VerifyScoreLevel() == true)
+        {
+            SceneManager.LoadScene("Nivel_5");
+        }else
+            SceneManager.LoadScene("Nivel_01");
         //aca guardar datos almacenados
     }
     public void MostrarAlerta(string TextEnunciado)

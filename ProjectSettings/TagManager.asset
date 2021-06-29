@@ -9,6 +9,11 @@ TagManager:
   - ItemRanking
   - ItemProgreso
   - ItemLogro
+  - star
+  - agua
+  - salmon
+  - cocodrilo
+  - croco
   layers:
   - Default
   - TransparentFX

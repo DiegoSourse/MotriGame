@@ -15,26 +15,36 @@ public class zombie : MonoBehaviour
     
     Vector3 targetPosition;
     Vector3 towardsTarget;
-
+    private float porcentaje;
     float wanderRadius = 4.0f;
     private float timer;
-    void RecalculateTargetPosition() {
-        do
-        {
-            targetPosition = player.transform.position + Random.onUnitSphere * wanderRadius;
-
-        } while (targetPosition.y < 0.5f);
-                /*if (targetPosition.y < 1.9f)
-            targetPosition.y = 1.9f;*/
-        //Debug.Log(targetPosition.ToString());
-    }
+    private float estatura, MaxH, radio;
     // Start is called before the first frame update
     void Start()
     {
         int level = EstadoJuego.estadoJuego.Level;
+        estatura = EstadoJuego.estadoJuego.Estatura;
+        //estatura = 1.1f;
+        porcentaje = (estatura == 0 ? 1.8f : estatura * 1) / 1.8f;
+        radio = wanderRadius * porcentaje;
+        MaxH = radio - 0.5f;
         decrement = (initialtimer - 2f)/EstadoJuego.estadoJuego.MaxScorePerLevel[level];
+
         RecalculateTargetPosition();
         StartCoroutine(Volar());
+    }
+    void RecalculateTargetPosition()
+    {
+        do
+        {
+            targetPosition = player.transform.position + Random.onUnitSphere * radio;
+        } while (targetPosition.y < 0.5f);          
+        if (targetPosition.y > MaxH)
+        {
+            targetPosition.y = MaxH;
+            targetPosition.z = MaxH;
+        }
+        //Debug.Log(targetPosition.ToString());
     }
     public void Colision()
     {

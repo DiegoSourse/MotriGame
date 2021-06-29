@@ -24,7 +24,7 @@ public class ButtonClickRedirect : MonoBehaviour
     void Direccionar()
     {
         //Debug.Log(GameObject.FindGameObjectsWithTag("ItemJugador").Length);
-        Debug.Log(textoBoton);
+        //Debug.Log(textoBoton);
         SQLiteAndroid sql = new SQLiteAndroid();
         sql.Conectar();
         string condi = "Id_Jugador=" + idBoton;

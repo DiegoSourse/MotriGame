@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8649073541964865751}
   - component: {fileID: 8254463861308611060}
   - component: {fileID: 408077984431218168}
-  - component: {fileID: 6229437192671859194}
+  - component: {fileID: 6132854878070950265}
   m_Layer: 0
   m_Name: tronco
   m_TagString: proyectil
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1
   rb: {fileID: 0}
---- !u!54 &6229437192671859194
+--- !u!54 &6132854878070950265
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

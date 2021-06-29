@@ -24,7 +24,7 @@ public class SQLiteAndroid// : MonoBehaviour
         //Application database Path android
         string filepath = Application.persistentDataPath + "/" + DatabaseName;
         conn = "URI=file:" + filepath;
-        Debug.Log("Stablishing connection to: " + conn);
+        //Debug.Log("Stablishing connection to: " + conn);
         dbconn = new SqliteConnection(conn);
         dbconn.Open();
         CreateSchema();
@@ -69,7 +69,7 @@ public class SQLiteAndroid// : MonoBehaviour
                                   " Tiempo TIME NOT NULL," +
                                   " FOREIGN KEY (Id_jugador) REFERENCES Jugador (Id_jugador) );";
                 var result = cmd.ExecuteNonQuery();
-                Debug.Log("create schema: " + result);
+                //Debug.Log("create schema: " + result);
             }
         }
     }
@@ -93,7 +93,7 @@ public class SQLiteAndroid// : MonoBehaviour
     //Read All Data For To Database
     public IDataReader Select_function(string table, string items, string condition="1")
     {
-        Debug.Log(dbconn.State);
+        //Debug.Log(dbconn.State);
         dbconn = new SqliteConnection(conn);
         dbconn.Open(); //Open connection to the database.
         IDbCommand dbcmd = dbconn.CreateCommand();

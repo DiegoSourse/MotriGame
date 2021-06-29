@@ -39,6 +39,7 @@ public class SpawnTronco : MonoBehaviour
     private void Awake()
     {
         float Estatura = EstadoJuego.estadoJuego.Estatura;
+        //float Estatura = 1.07f;
         Porcentaje =(Estatura == 0?1.8f:Estatura * 1)/ 1.8f;
         N_AltoTronco = AltoTronco * Porcentaje;
         N_AnchoTronco = AnchoTronco * Porcentaje;
@@ -47,10 +48,10 @@ public class SpawnTronco : MonoBehaviour
     }
     void LlenarPosiciones()
     {
-        float Fila1 = (N_AnchoTronco * 3.5f) + N_EspacioSuelo;
-        float Fila2 = (N_AnchoTronco * 2.5f) + N_EspacioSuelo;
-        float Fila3 = (N_AnchoTronco * 1.5f) + N_EspacioSuelo;
-        float Fila4 = (N_AnchoTronco * 0.5f) + N_EspacioSuelo;
+        float Fila1 = (N_AltoTronco * 3.5f) + N_EspacioSuelo;
+        float Fila2 = (N_AltoTronco * 2.5f) + N_EspacioSuelo;
+        float Fila3 = (N_AltoTronco * 1.5f) + N_EspacioSuelo;
+        float Fila4 = (N_AltoTronco * 0.5f) + N_EspacioSuelo;
         float A = (N_AnchoTronco * 0.5f);
         float B = (N_AnchoTronco * 1.5f);
         float nA = A*(-1);
@@ -78,7 +79,7 @@ public class SpawnTronco : MonoBehaviour
     public void GeneraTronco(int i)
     {
         GameObject proy=Instantiate(proyectil, posiciones[i], transform.rotation);
-        proy.transform.localScale=new Vector3(proy.transform.localScale.x*Porcentaje,proy.transform.localScale.y*Porcentaje,proy.transform.localScale.z);
+        proy.transform.localScale = new Vector3(proy.transform.localScale.x * Porcentaje, proy.transform.localScale.y * Porcentaje, proy.transform.localScale.z);
         //proy.GetComponent<Fisica>().velocity();
     }
     public void AplicarVelocidad(float th)
